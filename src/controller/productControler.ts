@@ -5,7 +5,7 @@ import { Product } from "../types/product";
 let products:Product[]=[]  
 
 
-export const addProduct=(product:Product)=>{
+export const addProduct=(product:Product):void=>{
     products.push(product)
 }
 //get all products
@@ -13,13 +13,14 @@ export const getAllProducts=():Product[]=>{
     return products
 }
 
-export const getProductById=(id:string)=>{
+export const getProductById=(id:string):Product| undefined=>{
     //return song by id using find method
     return products.find((p)=>p.id===id)
 }
 
 //update array
-export const updateProduct=(product:Product)=>{
+//if product is found we return the product else we return void
+export const updateProduct=(product:Product):Product|void=>{
     products=products.map((p)=>{
          return p.id===product.id?product:p
     })
