@@ -4,8 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    
-    "start": "nodemon src/index.ts"
+    "build": "tsc",
+    "start": "nodemon  build ts-node src/index.ts --watch dist/index.js"
+  
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "description": "",
   "dependencies": {
     "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
