@@ -29,5 +29,6 @@ export const updateProduct=(product:Product):Product|void=>{
 //delete product
 export const deleteProduct=(id:string)=>{
     products=products.filter((p)=>p.id!==id)
+     
 }
 
