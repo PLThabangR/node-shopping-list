@@ -16,10 +16,15 @@ This project allows users to **add, view, update, and delete** items from their 
 ## Step 3 
 - To run app
 - npm start
-
+  
+### Url to Get the api 
+ ```
+http://localhost:6000/products or http://localhost:6000/products/id
+```
 ##  Features
 -  **Add items** to the shopping list  
--  **View all items** or a single item by ID  
+-  **View all items** or a single item by ID
+ 
 -  **Update items** (e.g., name, quantity, status)  
 -  **Delete items** from the shopping list  
 -  Structured with **RESTful endpoints**  
